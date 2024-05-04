@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5372EDE0-034E-43BD-9F46-024BD00055B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UniversalFermenterSK</RootNamespace>
+    <AssemblyName>UniversalFermenter_SK</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <LangVersion>9.0</LangVersion>
+    <nullable>enable</nullable>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Assemblies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Core_SK">
+      <HintPath>..\..\Assemblies\Core_SK.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Assemblies\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BonusOutput.cs" />
+    <Compile Include="Building_AnimatedWorktable.cs" />
+    <Compile Include="Building_UF.cs" />
+    <Compile Include="Cacheable.cs" />
+    <Compile Include="Command_Process.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="ITab_UFContents.cs" />
+    <Compile Include="MapComponent_UF.cs" />
+    <Compile Include="QualityDays.cs" />
+    <Compile Include="RecipeDef_UF.cs" />
+    <Compile Include="ThingDef_UF.cs" />
+    <Compile Include="UFException.cs" />
+    <Compile Include="UF_Clipboard.cs" />
+    <Compile Include="UF_DefOf.cs" />
+    <Compile Include="JobDriver_FillUF.cs" />
+    <Compile Include="JobDriver_TakeProductOutOfUF.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Static_Bar.cs" />
+    <Compile Include="Static_Weather.cs" />
+    <Compile Include="UF_Core.cs" />
+    <Compile Include="UF_Progress.cs" />
+    <Compile Include="UF_Utility.cs" />
+    <Compile Include="VanillaPrivate.cs" />
+    <Compile Include="WorkGiver_FillUF.cs" />
+    <Compile Include="WorkGiver_TakeProductOutOfUF.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\OutputPath.props" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<Import Project="Properties\OutputPath.props" Condition="Exists('Properties\OutputPath.props')" />
+</Project>

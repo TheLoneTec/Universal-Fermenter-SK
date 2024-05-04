@@ -1,0 +1,8 @@
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\UniversalFermenter_SK.dll
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\UniversalFermenter_SK.pdb
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\obj\Debug\UniversalFermenterSK.csproj.AssemblyReference.cache
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\obj\Debug\UniversalFermenterSK.csproj.CoreCompileInputs.cache
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\obj\Debug\UniversalFermenter_SK.dll
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\obj\Debug\UniversalFermenter_SK.pdb
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\UniversalFermenter_SK.dll
+E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\UniversalFermenter_SK\UniversalFermenter\UniversalFermenter_SK.pdb
